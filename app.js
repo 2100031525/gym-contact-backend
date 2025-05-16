@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 // CORS middleware
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL || "http://localhost:3000"],
+    origin: [process.env.FRONTEND_URL || "http://localhost:3000" || "https://gym-contact-frontend.vercel.app/"],
     methods: ["POST"],
     credentials: true,
   })

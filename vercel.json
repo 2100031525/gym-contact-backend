@@ -1,0 +1,36 @@
+{
+"version": 2,
+"builds": [
+{
+"src": "app.js",
+"use": "@vercel/node"
+}
+],
+"routes": [
+{
+"src": "/send/mail",
+"methods": ["POST"],
+"dest": "/index.js"
+},
+{
+"src": "/",
+"methods": ["GET"],
+"dest": "/index.js"
+}
+],
+"env": {
+"PORT":"4000",
+
+"FRONTEND_URL":"https://gym-contact-frontend.vercel.app/",
+
+"SMTP_HOST":"smtp.gmail.com",
+
+"SMTP_PORT":"535",
+
+"SMTP_SERVICE":"gmail",
+
+"SMTP_MAIL":"mrmock4@gmail.com",
+
+"SMTP_PASSWORD":"wxkp kptb nrap dhjm"
+}
+}
